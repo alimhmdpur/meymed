@@ -1,0 +1,78 @@
+.ninth-section {
+  .title-q {
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .row {
+    .col-xl-7 {
+      .accordion {
+        .accordion-item {
+          border: none;
+          padding: 0.3rem 0.8rem;
+          box-shadow: 5px 10px 30px -15px rgba(0, 0, 0, 0.1);
+          border-radius: 15px;
+          .accordion-header {
+            .accordion-button {
+              gap: 1rem;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 24px;
+              text-align: right;
+              padding: 0.2rem;
+              @media(max-width:420px) {
+                font-size: 12px;
+                gap: 0.5rem;
+              }
+              &:focus {
+                box-shadow: none;
+                // background-color: #ffffff;
+              }
+              &:not(.collapsed) {
+                color: #000000;
+                background-color: #ffffff;
+                box-shadow: none;
+              }
+              &::after {
+                background-color: #deeff5;
+                padding: 1.5rem;
+                border-radius: 50%;
+                background-image: url(../images/icons/collapsed.svg);
+                background-size: 1rem;
+                background-position: center;
+              }
+              &:not(.collapsed)::after {
+                background-image: url(../images/icons/notCollapsed.svg);
+                background-position: center;
+                background-size: 0.8rem;
+                background-color: #4a95e3;
+                transform: rotate(0deg);
+              }
+              .number {
+                font-weight: 900;
+                font-size: 36px;
+                line-height: 62px;
+                text-align: center;
+                color: #ececec;
+                // margin-left: 1rem;
+              }
+            }
+          }
+          .accordion-collapse {
+            .accordion-body {
+              font-weight: 500;
+              font-size: 13px;
+              line-height: 22px;
+              text-align: right;
+              color: #636363;
+              @media(max-width:420px) {
+                padding: 0.2rem;
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.fifth-section {
+    .title-button {
+        position: relative;
+        .newProducts-title {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding-bottom: 2.5rem;
+            margin-bottom: 5.5rem;
+        }
+        .btn-arrow {
+            transform: translate(-50%, -50%);
+            bottom: 0;
+            left: 50%;
+            .swiper-button-next {
+                width: 2.5rem;
+                height: 2.5rem;
+                aspect-ratio: 1/1;
+                border-radius: 37.5%;
+                border: none;
+                background-color: #ffffff;
+                &::after {
+                    content: none
+                }
+            }
+            .swiper-button-prev {
+                width: 2.5rem;
+                height: 2.5rem;
+                aspect-ratio: 1/1;
+                border-radius: 37.5%;
+                border: none;
+                background-color: #ffffff;
+                &::after {
+                    content: none
+                }
+            }
+        }
+    }
+    .mySwiper5 {
+        min-height: 20rem;
+        margin-top: 3rem;
+        .swiper-wrapper {
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                // background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .products{
+                    div {
+                        .products-id {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

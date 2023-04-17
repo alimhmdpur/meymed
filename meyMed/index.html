@@ -1,0 +1,2090 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body dir="rtl">
+    <!-- hesder section -->
+    <header>
+      <div class="container-lg">
+        <!-- nav section -->
+        <nav class="navbar navbar-expand-xl">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img
+                class="logo-page"
+                src="./assets/images/logo/logo.svg"
+                alt="logo"
+            /></a>
+
+            <form
+              class="search-form d-flex flex-grow-1 search-form"
+              role="search"
+            >
+              <input
+                class="form-control p-3"
+                type="search"
+                placeholder="نام محصول یا برند مورد نظرتان را وارد نمایید"
+              />
+              <button class="btn" type="submit">
+                <img
+                  src="./assets/images/icons/Vector (15).png"
+                  alt="search-btn"
+                />
+              </button>
+            </form>
+            <div class="nav-btn">
+              <a class="cart-btn btn btn-light p-3 ms-2" href="#">
+                <span class="Cart">سبد درخواست</span>
+                <img
+                  class="cart-icon"
+                  src="./assets/images/icons/cart.icon.svg"
+                  alt="سبد خرید"
+                />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+            <a class="tel-btn btn btn-warning p-3 ms-2" href="tel:+98029449547"
+              ><img src="./assets/images/icons/Vector (1).png" alt="تماس" />
+              <span>021 91014919</span></a
+            >
+            <div
+              class="log-in btn btn-primary p-3 d-flex align-items-center gap-2 ms-2"
+            >
+              <a
+                class="text-white text-align-center text-decoration-none"
+                href="#"
+                >ورود</a
+              >
+              <a
+                class="text-white text-align-center text-decoration-none"
+                href="#"
+                >ثبت نام</a
+              >
+            </div>
+          </div>
+        </nav>
+        <!-- offcanvas section -->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <a class="offcanvas-title" id="offcanvasNavbarLabel" href="#">
+              <img
+                class="logo-offcanvas"
+                src="./assets/images/logo/logo.svg"
+                alt=""
+              />
+            </a>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="products-type-list">
+              <!-- <a href="#"
+                ><img
+                  src="./assets/images/icons/Vector.png"
+                  alt="سبد خرید"
+                />
+                <span>سبد درخواست</span></a
+              > -->
+              <div
+                class="d-flex align-items-center justify-content-center gap-2 mb-4"
+              >
+                <a class="btn btn-warning p-3" href="tel:+98029449547"
+                  ><img src="./assets/images/icons/Vector (1).png" alt="تماس" />
+                  <span>021 91014919</span></a
+                >
+                <div
+                  class="log-in-offcanvas btn btn-primary p-3 d-flex align-items-center gap-2 d-inline-block"
+                >
+                  <a
+                    class="text-white text-align-center d-block text-decoration-none"
+                    href="#"
+                    >ورود</a
+                  >
+                  <a
+                    class="text-white text-align-center d-block text-decoration-none"
+                    href="#"
+                    >ثبت نام</a
+                  >
+                </div>
+              </div>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ابزار جراحی</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">اتاق عمل</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">تجهیزات پزشکی عمومی</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">هتلینگ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">تخصصی</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">فیزیوتراپی و توانبخشی</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">تصویر برداری</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">استریلیزاسیون و لندری</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    >لوازم مصرفی پزشکی و بیمارستانی</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">تجهیزات پزشکی</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <form class="searcher-form d-flex flex-grow-0" role="search">
+          <input
+            class="form-control me-0 p-3"
+            type="search"
+            placeholder="نام محصول یا برند مورد نظرتان را وارد نمایید"
+          />
+          <button class="btn" type="submit">
+            <img src="./assets/images/icons/Vector (15).png" alt="search-btn" />
+          </button>
+        </form>
+
+        <div class="section-products-list">
+          <div
+            class="d-flex align-items-center justify-content-evenly mt-4 py-4 px-1 products-list"
+          >
+            <div class="products-item">
+              <a class="title-products text-center" href="#">ابزار جراحی</a>
+            </div>
+            <div class="products-item">
+              <a class="title-products text-center" href="#">اتاق عمل</a>
+            </div>
+            <div class="products-item">
+              <a class="title-products text-center" href="#"
+                >تجهیزات پزشکی عمومی</a
+              >
+            </div>
+            <div class="products-item">
+              <a class="title-products text-center" href="#">هتلینگ</a>
+            </div>
+            <div class="products-item">
+              <a class="title-products text-center" href="#">تخصصی</a>
+            </div>
+            <div class="products-item">
+              <a class="title-products text-center" href="#">
+                فیزیوتراپی و توانبخشی
+              </a>
+            </div>
+            <div class="products-item">
+              <a class="title-products text-center" href="#">تصویر برداری</a>
+            </div>
+            <div class="products-item">
+              <a class="title-products text-center" href="#"
+                >استریلیزاسیون و لندری</a
+              >
+            </div>
+            <div class="products-item">
+              <a class="title-products text-center" href="#">
+                لوازم مصرفی پزشکی و بیمارستانی
+              </a>
+            </div>
+            <div class="products-item">
+              <a class="title-products text-center" href="#">تجهیزات پزشکی</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main section -->
+    <main>
+      <div class="container-lg">
+        <section class="first-section">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide productsTypes1">
+                <div class="swiper-items">
+                  <a class="d-inline-block typeOfProductsLink" href="">
+                    <img
+                      class="d-block"
+                      src="./assets/images/typeOfProducts/CT Scanner.svg"
+                      alt=""
+                    />
+                    <span class="d-block">دستگاه های پزشکی</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-items productsTypes2">
+                  <a class="d-inline-block typeOfProductsLink" href="">
+                    <img
+                      class="d-block"
+                      src="./assets/images/typeOfProducts/Hospital Gown.svg"
+                      alt=""
+                    />
+                    <span class="d-block">تجهیزات اتاق عمل</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-items productsTypes3">
+                  <a class="d-inline-block typeOfProductsLink" href="">
+                    <img
+                      class="d-block"
+                      src="./assets/images/typeOfProducts/Hospital Wheel Bed.svg"
+                      alt=""
+                    />
+                    <span class="d-block">روپوش های پزشکی</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-items productsTypes4">
+                  <a class="d-inline-block typeOfProductsLink" href="">
+                    <img
+                      class="d-block"
+                      src="./assets/images/typeOfProducts/Catheter.svg"
+                      alt=""
+                    />
+                    <span class="d-block">تخت های بیمارستانس</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-items productsTypes5">
+                  <a class="typeOfProductsLink" href="">
+                    <img
+                      class="d-block"
+                      src="./assets/images/typeOfProducts/Stethoscope.svg"
+                      alt=""
+                    />
+                    <span class="d-block textOfType">ابزار پزشکی</span>
+                  </a>
+                </div>
+              </div>
+              <!-- <div class="swiper-slide">
+                <div class="swiper-items">
+                  <img
+                    src="./assets/images/typeOfProducts/Stethoscope.svg"
+                    alt=""
+                  />
+                  <span class="d-block">Slide 5</span>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Swiper JS -->
+        </section>
+        <section class="second-section">
+          <div
+            class="seS-content row justify-content-between align-items-end g-3 g-lg-4"
+          >
+            <div class="col-xl-9 col-lg-8 col-12">
+              <div class="support-section">
+                <div class="d-flex flex-column align-items-center row-gap-4">
+                  <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="option-support btn1">
+                          <img
+                            class="d-block img-support mw-100"
+                            src="./assets/images/image/Vector.svg"
+                            alt="organizational"
+                          />
+                          <span class="d-block title-support">سازمانی</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="option-support btn2">
+                          <img
+                            class="d-block img-support mw-100"
+                            src="./assets/images/image/Vector.svg"
+                            alt="organizational"
+                          />
+                          <span class="d-block title-support">سازمانی</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="option-support btn3">
+                          <img
+                            class="d-block img-support"
+                            src="./assets/images/image/Vector.svg"
+                            alt="organizational"
+                          />
+                          <span class="d-block title-support">سازمانی</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="option-support btn4">
+                          <img
+                            class="d-block img-support"
+                            src="./assets/images/image/Vector.svg"
+                            alt="organizational"
+                          />
+                          <span class="d-block title-support">سازمانی</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="option-support btn5">
+                          <img
+                            class="d-block img-support"
+                            src="./assets/images/image/Vector.svg"
+                            alt="organizational"
+                          />
+                          <span class="d-block title-support">سازمانی</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <form class="support-form">
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="row mt-4 g-3">
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="نام و نام خانوادگی"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="شماره تماس"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="استان"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="شهر"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="توضیحات محصول"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <button class="d-block mx-auto" type="submit">
+                                ثبت درخواست
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="swiper-slide">
+                        <form class="support-form">
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="row mt-4 g-3">
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="نام و نام خانوادگی"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="شماره تماس"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="استان"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="شهر"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="توضیحات محصول"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <button class="d-block mx-auto" type="submit">
+                                ثبت درخواست
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="swiper-slide">
+                        <form class="support-form">
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="row mt-4 g-3">
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="نام و نام خانوادگی"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="شماره تماس"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="استان"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="شهر"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="توضیحات محصول"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <button class="d-block mx-auto" type="submit">
+                                ثبت درخواست
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="swiper-slide">
+                        <form class="support-form">
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="row mt-4 g-3">
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="نام و نام خانوادگی"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="شماره تماس"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="استان"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="شهر"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="توضیحات محصول"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <button class="d-block mx-auto" type="submit">
+                                ثبت درخواست
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="swiper-slide">
+                        <form class="support-form">
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="check-list">
+                            <input
+                              class="check-input form-check-input"
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />
+                            <span class="check-item">
+                              تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای
+                              موجود در بازار.</span
+                            >
+                          </div>
+                          <div class="row mt-4 g-3">
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="نام و نام خانوادگی"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="شماره تماس"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="استان"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="شهر"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <input
+                                class="d-block mx-auto"
+                                type="text"
+                                placeholder="توضیحات محصول"
+                              />
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                              <button class="d-block mx-auto" type="submit">
+                                ثبت درخواست
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-xl-3">
+              <div class="swiperHelper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slide1" data-aos="fade-left">
+                    <div class="desc-part">
+                      <img
+                        class="desc-img"
+                        src="./assets/images/image/emojione_hospital.svg"
+                        alt=""
+                      />
+                      <h4 class="desc-title">سازمانی</h4>
+                      <p class="description">
+                        کالای بیمارستانی و تجهیزات پزشکی موجود در سایت، همگی در
+                        بخش‌هایی مجزا دسته‌بندی شده اند و شما می توانید با ورود
+                        به هر دسته، از تنوع کالاهای موجود در آن دیدن کنید.
+                        همچنین در قسمت جستجوی سایت نیز می‌توانید نام برند یا
+                        محصول مورد نظرتان بخش‌هایی مجزا دسته‌بندی شده اند و شما
+                        می توانید با ورود به هر دسته، از تنوع کالاهای موجود در
+                        آن دیدن کنید. همچنین در قسمت جستجوی سایت نیز می‌توانید
+                        نام برند یا محصول مورد نظرتان را درج و سپس گزینه‌های
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide slide2" data-aos="fade-left">
+                    <div class="desc-part">
+                      <img
+                        class="desc-img"
+                        src="./assets/images/image/emojione_hospital.svg"
+                        alt=""
+                      />
+                      <h4 class="desc-title">سازمانی 2</h4>
+                      <p class="description">
+                        کالای بیمارستانی و تجهیزات پزشکی موجود در سایت، همگی در
+                        بخش‌هایی مجزا دسته‌بندی شده اند و شما می توانید با ورود
+                        به هر دسته، از تنوع کالاهای موجود در آن دیدن کنید.
+                        همچنین در قسمت جستجوی سایت نیز می‌توانید نام برند یا
+                        محصول مورد نظرتان بخش‌هایی مجزا دسته‌بندی شده اند و شما
+                        می توانید با ورود به هر دسته، از تنوع کالاهای موجود در
+                        آن دیدن کنید. همچنین در قسمت جستجوی سایت نیز می‌توانید
+                        نام برند یا محصول مورد نظرتان را درج و سپس گزینه‌های
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide slide3" data-aos="fade-left">
+                    <div class="desc-part">
+                      <img
+                        class="desc-img"
+                        src="./assets/images/image/emojione_hospital.svg"
+                        alt=""
+                      />
+                      <h4 class="desc-title">3 سازمانی</h4>
+                      <p class="description">
+                        کالای بیمارستانی و تجهیزات پزشکی موجود در سایت، همگی در
+                        بخش‌هایی مجزا دسته‌بندی شده اند و شما می توانید با ورود
+                        به هر دسته، از تنوع کالاهای موجود در آن دیدن کنید.
+                        همچنین در قسمت جستجوی سایت نیز می‌توانید نام برند یا
+                        محصول مورد نظرتان بخش‌هایی مجزا دسته‌بندی شده اند و شما
+                        می توانید با ورود به هر دسته، از تنوع کالاهای موجود در
+                        آن دیدن کنید. همچنین در قسمت جستجوی سایت نیز می‌توانید
+                        نام برند یا محصول مورد نظرتان را درج و سپس گزینه‌های
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide slide4" data-aos="fade-left">
+                    <div class="desc-part">
+                      <img
+                        class="desc-img"
+                        src="./assets/images/image/emojione_hospital.svg"
+                        alt=""
+                      />
+                      <h4 class="desc-title">4 سازمانی</h4>
+                      <p class="description">
+                        کالای بیمارستانی و تجهیزات پزشکی موجود در سایت، همگی در
+                        بخش‌هایی مجزا دسته‌بندی شده اند و شما می توانید با ورود
+                        به هر دسته، از تنوع کالاهای موجود در آن دیدن کنید.
+                        همچنین در قسمت جستجوی سایت نیز می‌توانید نام برند یا
+                        محصول مورد نظرتان بخش‌هایی مجزا دسته‌بندی شده اند و شما
+                        می توانید با ورود به هر دسته، از تنوع کالاهای موجود در
+                        آن دیدن کنید. همچنین در قسمت جستجوی سایت نیز می‌توانید
+                        نام برند یا محصول مورد نظرتان را درج و سپس گزینه‌های
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide slide5" data-aos="fade-left">
+                    <div class="desc-part">
+                      <img
+                        class="desc-img"
+                        src="./assets/images/image/emojione_hospital.svg"
+                        alt=""
+                      />
+                      <h4 class="desc-title">سازمانی 5</h4>
+                      <p class="description">
+                        کالای بیمارستانی و تجهیزات پزشکی موجود در سایت، همگی در
+                        بخش‌هایی مجزا دسته‌بندی شده اند و شما می توانید با ورود
+                        به هر دسته، از تنوع کالاهای موجود در آن دیدن کنید.
+                        همچنین در قسمت جستجوی سایت نیز می‌توانید نام برند یا
+                        محصول مورد نظرتان بخش‌هایی مجزا دسته‌بندی شده اند و شما
+                        می توانید با ورود به هر دسته، از تنوع کالاهای موجود در
+                        آن دیدن کنید. همچنین در قسمت جستجوی سایت نیز می‌توانید
+                        نام برند یا محصول مورد نظرتان را درج و سپس گزینه‌های
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="third-section">
+          <div class="swiper mySwiper4">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <div class="isotope-menu">دستگاه های پزشکی</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="isotope-menu">تجهیزات اتاق عمل</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="isotope-menu">روپوش های پزشکی</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="isotope-menu">تخت های بیمارستانس</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="isotope-menu">ابزار پزشکی</div>
+              </div>
+            </div>
+          </div>
+          <div class="grid row g-4 justify-content-center">
+            <div class="col-11 col-sm-6 col-md-5 col-lg-4 col-xxl-3">
+              <div class="products bg-white px-4 py-3 rounded-4">
+                <img
+                  class="d-block products-img mx-auto"
+                  src="./assets/images/products/unsplash_SZ1DDwCPqkE (1).png"
+                  alt=""
+                />
+                <div class="">
+                  <span class="d-block products-id">کد 8001</span>
+                  <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                  <div
+                    class="d-flex flex-row-reverse justify-content-between align-items-center"
+                  >
+                    <div class="d-flex flex-column">
+                      <span class="toman text-end">تومان</span>
+                      <span class="price">1,350,000</span>
+                    </div>
+                    <img
+                      class="unliked"
+                      src="./assets/images/icons/heart.svg"
+                      alt=""
+                    />
+                    <img
+                      class="liked"
+                      src="./assets/images/icons/red-heart-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-11 col-sm-6 col-md-5 col-lg-4 col-xxl-3">
+              <div class="products bg-white px-4 py-3 rounded-4">
+                <img
+                  class="d-block products-img mx-auto"
+                  src="./assets/images/products/unsplash_SZ1DDwCPqkE (2).png"
+                  alt=""
+                />
+                <div class="">
+                  <span class="d-block products-id">کد 8001</span>
+                  <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                  <div
+                    class="d-flex flex-row-reverse justify-content-between align-items-center"
+                  >
+                    <div class="d-flex flex-column">
+                      <span class="toman text-end">تومان</span>
+                      <span class="price">1,350,000</span>
+                    </div>
+                    <img
+                      class="unliked"
+                      src="./assets/images/icons/heart.svg"
+                      alt=""
+                    />
+                    <img
+                      class="liked"
+                      src="./assets/images/icons/red-heart-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-11 col-sm-6 col-md-5 col-lg-4 col-xxl-3">
+              <div class="products bg-white px-4 py-3 rounded-4">
+                <img
+                  class="d-block products-img mx-auto"
+                  src="./assets/images/products/unsplash_SZ1DDwCPqkE (9).png"
+                  alt=""
+                />
+                <div class="">
+                  <span class="d-block products-id">کد 8001</span>
+                  <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                  <div
+                    class="d-flex flex-row-reverse justify-content-between align-items-center"
+                  >
+                    <div class="d-flex flex-column">
+                      <span class="toman text-end">تومان</span>
+                      <span class="price">1,350,000</span>
+                    </div>
+                    <img
+                      class="unliked"
+                      src="./assets/images/icons/heart.svg"
+                      alt=""
+                    />
+                    <img
+                      class="liked"
+                      src="./assets/images/icons/red-heart-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-11 col-sm-6 col-md-5 col-lg-4 col-xxl-3">
+              <div class="products bg-white px-4 py-3 rounded-4">
+                <img
+                  class="d-block products-img mx-auto"
+                  src="./assets/images/products/unsplash_SZ1DDwCPqkE (11).png"
+                  alt=""
+                />
+                <div class="">
+                  <span class="d-block products-id">کد 8001</span>
+                  <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                  <div
+                    class="d-flex flex-row-reverse justify-content-between align-items-center"
+                  >
+                    <div class="d-flex flex-column">
+                      <span class="toman text-end">تومان</span>
+                      <span class="price">1,350,000</span>
+                    </div>
+                    <img
+                      class="unliked"
+                      src="./assets/images/icons/heart.svg"
+                      alt=""
+                    />
+                    <img
+                      class="liked"
+                      src="./assets/images/icons/red-heart-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-11 col-sm-6 col-md-5 col-lg-4 col-xxl-3">
+              <div class="products bg-white px-4 py-3 rounded-4">
+                <img
+                  class="d-block products-img mx-auto"
+                  src="./assets/images/products/unsplash_SZ1DDwCPqkE (10).png"
+                  alt=""
+                />
+                <div class="">
+                  <span class="d-block products-id">کد 8001</span>
+                  <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                  <div
+                    class="d-flex flex-row-reverse justify-content-between align-items-center"
+                  >
+                    <div class="d-flex flex-column">
+                      <span class="toman text-end">تومان</span>
+                      <span class="price">1,350,000</span>
+                    </div>
+                    <img
+                      class="unliked"
+                      src="./assets/images/icons/heart.svg"
+                      alt=""
+                    />
+                    <img
+                      class="liked"
+                      src="./assets/images/icons/red-heart-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-11 col-sm-6 col-md-5 col-lg-4 col-xxl-3">
+              <div class="products bg-white px-4 py-3 rounded-4">
+                <img
+                  class="d-block products-img mx-auto"
+                  src="./assets/images/products/unsplash_SZ1DDwCPqkE (5).png"
+                  alt=""
+                />
+                <div class="">
+                  <span class="d-block products-id">کد 8001</span>
+                  <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                  <div
+                    class="d-flex flex-row-reverse justify-content-between align-items-center"
+                  >
+                    <div class="d-flex flex-column">
+                      <span class="toman text-end">تومان</span>
+                      <span class="price">1,350,000</span>
+                    </div>
+                    <img
+                      class="unliked"
+                      src="./assets/images/icons/heart.svg"
+                      alt=""
+                    />
+                    <img
+                      class="liked"
+                      src="./assets/images/icons/red-heart-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-11 col-sm-6 col-md-5 col-lg-4 col-xxl-3">
+              <div class="products bg-white px-4 py-3 rounded-4">
+                <img
+                  class="d-block products-img mx-auto"
+                  src="./assets/images/products/unsplash_SZ1DDwCPqkE (6).png"
+                  alt=""
+                />
+                <div class="">
+                  <span class="d-block products-id">کد 8001</span>
+                  <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                  <div
+                    class="d-flex flex-row-reverse justify-content-between align-items-center"
+                  >
+                    <div class="d-flex flex-column">
+                      <span class="toman text-end">تومان</span>
+                      <span class="price">1,350,000</span>
+                    </div>
+                    <img
+                      class="unliked"
+                      src="./assets/images/icons/heart.svg"
+                      alt=""
+                    />
+                    <img
+                      class="liked"
+                      src="./assets/images/icons/red-heart-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-11 col-sm-6 col-md-5 col-lg-4 col-xxl-3">
+              <div class="products bg-white px-4 py-3 rounded-4">
+                <img
+                  class="d-block products-img mx-auto"
+                  src="./assets/images/products/unsplash_SZ1DDwCPqkE (8).png"
+                  alt=""
+                />
+                <div class="">
+                  <span class="d-block products-id">کد 8001</span>
+                  <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                  <div
+                    class="d-flex flex-row-reverse justify-content-between align-items-center"
+                  >
+                    <div class="d-flex flex-column">
+                      <span class="toman text-end">تومان</span>
+                      <span class="price">1,350,000</span>
+                    </div>
+                    <img
+                      class="unliked"
+                      src="./assets/images/icons/heart.svg"
+                      alt=""
+                    />
+                    <img
+                      class="liked"
+                      src="./assets/images/icons/red-heart-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="fourth-section">
+          <div
+            class="row justify-content-xl-center justify-content-lg-between align-items-center justify-content-center g-3 g-lg-5"
+          >
+            <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
+              <div class="productTypes d-flex justify-content-between">
+                <div class="d-flex flex-column">
+                  <span class="productsTypes-title"
+                    >انواع محصولات ضد عفونی کننده</span
+                  >
+                  <a class="seeMore-link" href="#">مشاهده بیشتر</a>
+                </div>
+                <img
+                  class="d-black jel-img"
+                  src="./assets/images/image/jel-hand.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
+              <div class="n95Mask d-flex justify-content-between">
+                <div class="d-flex flex-column">
+                  <span class="maskTypes-title">ماسک های N95 مدل سه بعدی</span>
+                  <a class="seeMore-link" href="#">مشاهده بیشتر</a>
+                </div>
+                <img
+                  class="d block mask-img"
+                  src="./assets/images/image/mask.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="fifth-section">
+          <div class="title-button">
+            <h4 class="newProducts-title">جدیدترین محصولات</h4>
+            <div class="position-absolute btn-arrow">
+              <button
+                class="swiper-button-next btn-swiper"
+                tabindex="0"
+                aria-label="Next slide"
+                aria-controls="swiper-wrapper-6df0bb631798d5d10"
+                aria-disabled="false"
+              >
+                <img
+                  class="arrow-icon"
+                  src="./assets/images/icons/arrow-left.svg"
+                />
+              </button>
+              <button
+                class="swiper-button-prev btn-swiper"
+                tabindex="0"
+                aria-label="Previous slide"
+                aria-controls="swiper-wrapper-dc06deb838e61af8"
+                aria-disabled="false"
+              >
+                <img
+                  class="arrow-icon"
+                  src="./assets/images/icons/arrow-right.svg"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="swiper mySwiper5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="products bg-white px-4 py-3 rounded-4">
+                  <img
+                    class="d-block products-img mx-auto"
+                    src="./assets/images/products/unsplash_SZ1DDwCPqkE (11).png"
+                    alt=""
+                  />
+                  <div class="">
+                    <span class="d-block products-id">کد 8001</span>
+                    <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                    <div
+                      class="d-flex flex-row-reverse justify-content-between align-items-center"
+                    >
+                      <div class="d-flex flex-column">
+                        <span class="toman text-end">تومان</span>
+                        <span class="price">1,350,000</span>
+                      </div>
+                      <img
+                        class="unliked"
+                        src="./assets/images/icons/heart.svg"
+                        alt=""
+                      />
+                      <img
+                        class="liked"
+                        src="./assets/images/icons/red-heart-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products bg-white px-4 py-3 rounded-4">
+                  <img
+                    class="d-block products-img mx-auto"
+                    src="./assets/images/products/unsplash_SZ1DDwCPqkE (8).png"
+                    alt=""
+                  />
+                  <div class="">
+                    <span class="d-block products-id">کد 8001</span>
+                    <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                    <div
+                      class="d-flex flex-row-reverse justify-content-between align-items-center"
+                    >
+                      <div class="d-flex flex-column">
+                        <span class="toman text-end">تومان</span>
+                        <span class="price">1,350,000</span>
+                      </div>
+                      <img
+                        class="unliked"
+                        src="./assets/images/icons/heart.svg"
+                        alt=""
+                      />
+                      <img
+                        class="liked"
+                        src="./assets/images/icons/red-heart-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products bg-white px-4 py-3 rounded-4">
+                  <img
+                    class="d-block products-img mx-auto"
+                    src="./assets/images/products/unsplash_SZ1DDwCPqkE (7).png"
+                    alt=""
+                  />
+                  <div class="">
+                    <span class="d-block products-id">کد 8001</span>
+                    <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                    <div
+                      class="d-flex flex-row-reverse justify-content-between align-items-center"
+                    >
+                      <div class="d-flex flex-column">
+                        <span class="toman text-end">تومان</span>
+                        <span class="price">1,350,000</span>
+                      </div>
+                      <img
+                        class="unliked"
+                        src="./assets/images/icons/heart.svg"
+                        alt=""
+                      />
+                      <img
+                        class="liked"
+                        src="./assets/images/icons/red-heart-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products bg-white px-4 py-3 rounded-4">
+                  <img
+                    class="d-block products-img mx-auto"
+                    src="./assets/images/products/unsplash_SZ1DDwCPqkE (6).png"
+                    alt=""
+                  />
+                  <div class="">
+                    <span class="d-block products-id">کد 8001</span>
+                    <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                    <div
+                      class="d-flex flex-row-reverse justify-content-between align-items-center"
+                    >
+                      <div class="d-flex flex-column">
+                        <span class="toman text-end">تومان</span>
+                        <span class="price">1,350,000</span>
+                      </div>
+                      <img
+                        class="unliked"
+                        src="./assets/images/icons/heart.svg"
+                        alt=""
+                      />
+                      <img
+                        class="liked"
+                        src="./assets/images/icons/red-heart-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products bg-white px-4 py-3 rounded-4">
+                  <img
+                    class="d-block products-img mx-auto"
+                    src="./assets/images/products/unsplash_SZ1DDwCPqkE (1).png"
+                    alt=""
+                  />
+                  <div class="">
+                    <span class="d-block products-id">کد 8001</span>
+                    <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                    <div
+                      class="d-flex flex-row-reverse justify-content-between align-items-center"
+                    >
+                      <div class="d-flex flex-column">
+                        <span class="toman text-end">تومان</span>
+                        <span class="price">1,350,000</span>
+                      </div>
+                      <img
+                        class="unliked"
+                        src="./assets/images/icons/heart.svg"
+                        alt=""
+                      />
+                      <img
+                        class="liked"
+                        src="./assets/images/icons/red-heart-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products bg-white px-4 py-3 rounded-4">
+                  <img
+                    class="d-block products-img mx-auto"
+                    src="./assets/images/products/unsplash_SZ1DDwCPqkE (3).png"
+                    alt=""
+                  />
+                  <div class="">
+                    <span class="d-block products-id">کد 8001</span>
+                    <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                    <div
+                      class="d-flex flex-row-reverse justify-content-between align-items-center"
+                    >
+                      <div class="d-flex flex-column">
+                        <span class="toman text-end">تومان</span>
+                        <span class="price">1,350,000</span>
+                      </div>
+                      <img
+                        class="unliked"
+                        src="./assets/images/icons/heart.svg"
+                        alt=""
+                      />
+                      <img
+                        class="liked"
+                        src="./assets/images/icons/red-heart-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products bg-white px-4 py-3 rounded-4">
+                  <img
+                    class="d-block products-img mx-auto"
+                    src="./assets/images/products/unsplash_SZ1DDwCPqkE (1).png"
+                    alt=""
+                  />
+                  <div class="">
+                    <span class="d-block products-id">کد 8001</span>
+                    <p class="products-name">تب سنج دیجیتال رزمکس مدل HC700</p>
+                    <div
+                      class="d-flex flex-row-reverse justify-content-between align-items-center"
+                    >
+                      <div class="d-flex flex-column">
+                        <span class="toman text-end">تومان</span>
+                        <span class="price">1,350,000</span>
+                      </div>
+                      <img
+                        class="unliked"
+                        src="./assets/images/icons/heart.svg"
+                        alt=""
+                      />
+                      <img
+                        class="liked"
+                        src="./assets/images/icons/red-heart-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+          </div>
+        </section>
+        <section class="sixth-section">
+          <div
+            class="row justify-content-center justify-content-xl-evenly mt-5 g-4 g-lg-5 g-xl-0"
+          >
+            <div class="col-sm-10 col-md-8 col-lg-8 col-xl-6">
+              <div class="specialOffer-box">
+                <h3 class="titleOffer">پیشنهاد ویژه</h3>
+                <p class="offer-p">
+                  انواع تجهیزات پزشکی مخصوص اتاق عمل از معتبرترین برندهای موجود
+                  در بازار با تخفیف اختصاصی ویژه فروشگاه میمد به مدت محدود
+                </p>
+                <div
+                  class="d-flex flex-column-reverse flex-sm-row-reverse gap-3 gap-sm-0 justify-content-between align-items-center"
+                >
+                  <div class="btn-seeMore">
+                    <a class="seeMore-link" href="#">مشاهده بیشتر</a>
+                  </div>
+                  <div class="d-flex" id="counterDate">
+                    <div class="mx-2">
+                      <div
+                        class="d-flex flex-column justify-content-between align-items-center"
+                      >
+                        <span class="d-block mb-2 date">ثانیه</span>
+                        <span class="d-block counter" id="seconds">0</span>
+                      </div>
+                    </div>
+                    <div class="mx-2">
+                      <div
+                        class="d-flex flex-column justify-content-between align-items-center"
+                      >
+                        <span class="d-block mb-2 date">دقیقه</span>
+                        <span class="d-block counter" id="minutes">0</span>
+                      </div>
+                    </div>
+                    <div class="mx-2">
+                      <div
+                        class="d-flex flex-column justify-content-between align-items-center"
+                      >
+                        <span class="d-block mb-2 date">ساعت</span>
+                        <span class="d-block counter" id="hours">0</span>
+                      </div>
+                    </div>
+                    <div class="mx-2">
+                      <div
+                        class="d-flex flex-column justify-content-between align-items-center"
+                      >
+                        <span class="d-block mb-2 date">روز</span>
+                        <span class="d-block counter" id="days">0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-10 col-md-8 col-lg-8 col-xl-5">
+              <div class="rosemaxOffer">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="titleRosemax-offer">
+                    بیش از <span class="text-primary">30 درصد</span> تخفیف برای
+                    محصولات برند رزمکس
+                  </h3>
+
+                  <img
+                    class="d-block rosemax-logo"
+                    src="./assets/images/icons/RM_Logo_wo_Slogan 1.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="rosemax-p">
+                  محصولات نمونه برند رزمکس با تکنولوژی برتر و بالاترین کیفیت
+                </p>
+                <div>
+                  <a class="seeMore-link d-inline-block" href="#"
+                    >مشاهده بیشتر</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="seventh-section">
+          <div class="title-button-customers">
+            <h4 class="newCustomers-title">برخی از مشتریان</h4>
+            <p class="text-center">
+              تامین منافع مشتری از جمله اهداف مهم ذر شرکت میمد میباشد و باعث
+              افتخار ماست که توانسته ایم با کیفیت و توانایی های خود رضایت
+              مشتریان خود را جلب کنیم.
+            </p>
+            <div class="position-absolute btn-arrow">
+              <button
+                class="prev-button"
+                tabindex="0"
+                aria-label="Previous slide"
+                aria-controls="swiper-wrapper-dc06deb838e61af8"
+                aria-disabled="false"
+              >
+                <img
+                  class="arrow-icon"
+                  src="./assets/images/icons/arrow-right.svg"
+                />
+              </button>
+              <button
+                class="next-button"
+                tabindex="0"
+                aria-label="Next slide"
+                aria-controls="swiper-wrapper-6df0bb631798d5d10"
+                aria-disabled="false"
+              >
+                <img
+                  class="arrow-icon"
+                  src="./assets/images/icons/arrow-left.svg"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="swiper mySwiper6">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="customers">
+                  <img
+                    class="customers-img"
+                    src="./assets/images/customers/Emam-Khomeyni-Hospital-Logo 1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customers">
+                  <img
+                    class="customers-img"
+                    src="./assets/images/customers/Khatam-Anbiya-Hospital-Kogo 1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customers">
+                  <img
+                    class="customers-img"
+                    src="./assets/images/customers/logo-helal-ahmar 1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customers">
+                  <img
+                    class="customers-img"
+                    src="./assets/images/customers/logo-milad-tower 1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customers">
+                  <img
+                    class="customers-img"
+                    src="./assets/images/customers/Mehr-Hospital-Logo 1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customers">
+                  <img
+                    class="customers-img"
+                    src="./assets/images/customers/Pars-Hospital-Logo 1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customers">
+                  <img
+                    class="customers-img"
+                    src="./assets/images/customers/Khatam-Anbiya-Hospital-Kogo 1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customers">
+                  <img
+                    class="customers-img"
+                    src="./assets/images/customers/logo-milad-tower 1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+          </div>
+        </section>
+        <section class="eighth-section">
+          <div
+            class="meymed-shop d-flex justify-content-center align-items-end"
+          >
+            <div class="img-meymedShop">
+              <img src="./assets/images/icons/Group.svg" alt="" />
+            </div>
+            <h4 class="title-meymedShop">
+              فروشگاه اینترنتی تجهیزات پزشکی، بیمارستانی و آزمایشگاهی میمد
+            </h4>
+          </div>
+          <div class="primary-box mt-5">
+            <div class="row justify-content-center g-4 g-xl-0">
+              <div class="col-sm-10 col-md-6 col-xl-3">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-3"
+                >
+                  <span class="d-block shopTitle">پشتیبانی 24 ساعته</span>
+                  <img
+                    class="d-block shopIcons"
+                    src="./assets/images/icons/conversation 1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-sm-10 col-md-6 col-xl-3">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-3"
+                >
+                  <span class="d-block shopTitle"
+                    >قیمت های به روز و رقابتی</span
+                  >
+                  <img
+                    class="d-block shopIcons"
+                    src="./assets/images/icons/discount 1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-sm-10 col-md-6 col-xl-3">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-3"
+                >
+                  <span class="d-block shopTitle">ضمانت اصالت محصولات</span>
+                  <img
+                    class="d-block shopIcons"
+                    src="./assets/images/icons/guaranteed 1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-sm-10 col-md-6 col-xl-3">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-3"
+                >
+                  <span class="d-block shopTitle">ارسال با پست پیشتاز</span>
+                  <img
+                    class="d-block shopIcons"
+                    src="./assets/images/icons/fast-delivery 1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="ninth-section">
+          <h4 class="title-q text-center">سوالات متداول</h4>
+          <div class="row justify-content-center">
+            <div class="col-xl-7">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item mb-5">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      <span class="number">1</span>
+                      نحوه فعالیت فروشگاه اینترنتی تجهیزات پزشکی می‌مد به چه
+                      صورت است؟
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      فروشگاه می‌مد با همکاری شرکت های تولیدکننده و واردکننده
+                      تجهیزات پزشکی، بعنوان نماینده اینترنتی فروش آنها، کالا‌های
+                      پزشکی، بیمارستانی و مراقبتی را در سایت خود با تخفیفات ویژه
+                      به فروش می‌رساند که قیمت بخشی از این کالاها، به دلیل
+                      نوسانات بازار در سایت درج نشده است.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-5">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      <span class="number">2</span>
+                      کالای مورد نظرتان را در سایت می‌مد چگونه جستجو کنید؟
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      کالای بیمارستانی و تجهیزات پزشکی موجود در سایت، همگی در
+                      بخش‌هایی مجزا دسته‌بندی شده اند و شما می توانید با ورود به
+                      هر دسته، از تنوع کالاهای موجود در آن دیدن کنید. همچنین در
+                      قسمت جستجوی سایت نیز می‌توانید نام برند یا محصول مورد
+                      نظرتان را درج و سپس گزینه‌های موجود در سایت را مشاهده
+                      نمایید.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-5">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      <span class="number">3</span>
+                      روش‌های استعلام قیمت هر کالا به چه صورت است؟
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      جهت استعلام قیمت می‌توانید با یکی از راه‌های ارتباطی با
+                      کارشناسان فروش ما تماس گرفته تا با ارائه کد کالای مورد
+                      نظرتان، قیمت آن محصول به شما اعلام گردد.شما می‌توانید در
+                      صفحه‌ی مربوط به آن کالا، پس از درج شماره تماس خود، گزینه
+                      ثبت درخواست سریع را انتخاب نمایید. سپس پیامکی مبنی بر ثبت
+                      درخواست قیمت برایتان ارسال می‌گردد و همکاران ما طی تماسی،
+                      اطلاعات و قیمت آن محصول را به شما اعلام خواهند کرد.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-5">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFour"
+                    >
+                      <span class="number">4</span>
+                      نحوه پرداخت خرید هر کالا چگونه است؟
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      جهت استعلام قیمت می‌توانید با یکی از راه‌های ارتباطی با
+                      کارشناسان فروش ما تماس گرفته تا با ارائه کد کالای مورد
+                      نظرتان، قیمت آن محصول به شما اعلام گردد. در صورت قیمت‌دار
+                      بودن کالا، پس از ثبت نام در سایت و انتخاب کالا در سبد
+                      خرید، اطلاعات سفارش خود را درج و با اتصال به درگاه پرداخت،
+                      فرآیند خریدتان را تکمیل نمایید. در صورت قیمت نداشتن کالا
+                      نیز پس از استعلام قیمت، پیش فاکتوری توسط کارشناسان فروش
+                      برایتان ارسال می‌گردد تا بر اساس اطلاعات درج شدهنحوه
+                      پرداخت خرید هر کالا چگونه است؟ در آن، پرداخت انجام گردد.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5">
+              <img
+                class="mw-100 d-block mx-auto"
+                src="./assets/images/image/faq 1.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- footer section -->
+    <footer>
+      <div class="container-lg mt-5">
+        <section class="footer-section">
+          <div class="footer-box">
+            <img
+              class="d-block mx-auto logo"
+              src="./assets/images/logo/logo.svg"
+              alt=""
+            />
+            <h3 class="title-footer text-center">
+              فروشگاه اینترنتی تجهیزات پزشکی و بیمارستانی می مد
+            </h3>
+            <p class="footer-p text-center">
+              با ایجاد دسترسی عمومی آسان به خرید تجهیزات پزشکی و بیمارستانی با
+              کیفیت که مورد تایید اداره کل تجهیزات پزشکی ایران نیز می باشند، با
+              تعداد زیادی از تولیدکنندگان و واردکنندگان معتبر کالاهای پزشکی
+              همکاری کرده و طیف گسترده ای از محصولات و خرید ابزار پزشکی را به
+              صورت مستقیم و بدون واسطه، با قیمتی مناسب در فروشگاه آنلاین خود
+              عرضه می کند. فروشگاه اینترنتی تجهیزات پزشکی‌ می‌مد، مجموعه ای از
+              انواع تجهیزات بیمارستانی اتاق عمل، خرید تجهیزات آزمایشگاهی، خرید
+              تجهیزات هتلینگ بیمارستانی، خرید تجهیزات پزشکی خانگی، خرید تجهیزات
+              پزشکی زنان و زایمان، دستگاه ها و خرید تجهیزات تصویربرداری پزشکی،
+              خرید تجهیزات فیزیوتراپی، توانبخشی و کاردرمانی، خرید لوازم زیبایی،
+              خرید تجهیزات دامپزشکی، خرید لوازم مصرفی پزشکی بیمارستانی و خرید
+              تجهیزات دندانپزشکی را در یک فروشگاه آنلاین گرد هم آورده تا خریدار
+              با مشاهده ی کالای پزشکی مورد نیاز خود، اطلاعات لازم در رابطه با
+              کالا (شامل قیمت، توضیحات کلی و مشخصات فنی کالا، کشور تولید کننده و
+              رزومه ی برند مورد نظر و همچنین عکس و ویدیوی کالای پزشکی و مراقبتی)
+              را دریافت و با مقایسه ی آن در بازار رقابتی حاضر، راحتی و اطمینان
+              در خرید تجهیزات پزشکی بیمارستانی و آزمایشگاهی را با ما تجربه کند.
+            </p>
+          </div>
+          <div class="box"></div>
+          <div class="row g-4 firstRow">
+            <div class="col-lg-6">
+              <div class="footer-support-section">
+                <div class="d-flex">
+                  <h4 class="title-way">راه های ارتباطی</h4>
+                  <div class="socialsMedia">
+                    <a class="socil-media aparat-link" href="#"
+                      ><img
+                        class="socialmedia-icon aparat-link"
+                        src="./assets/images/icons/aparat.svg"
+                        alt=""
+                    /></a>
+                    <a class="socil-media telegram-link" href="#"
+                      ><img
+                        class="socialmedia-icon telegram-link"
+                        src="./assets/images/icons/telegram.svg"
+                        alt=""
+                    /></a>
+                    <a class="socil-media instagram-link" href="#"
+                      ><img
+                        class="socialmedia-icon instagram-link"
+                        src="./assets/images/icons/instagram.svg"
+                        alt=""
+                    /></a>
+                    <a class="socil-media whatsapp-link" href="#"
+                      ><img
+                        class="socialmedia-icon whatsapp-link"
+                        src="./assets/images/icons/whatsapp.svg"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="tel">
+                  <span class="tel-title">شماره تماس:</span>
+                  <a class="tel-number" href="tel:02191014919">021-91014919</a>
+                </div>
+                <div class="fax">
+                  <span class="fax-title">فکس:</span>
+                  <a class="fax-number" href="#">91014919 021 داخلی 200</a>
+                </div>
+                <div class="email">
+                  <span class="email-title">ایمیل:</span>
+                  <a class="email-address" href="mailto:info@meymed.com"
+                    >info@meymed.com</a
+                  >
+                </div>
+                <div class="branches">
+                  <span class="branches-title">شعب:</span>
+                  <address class="address tehran">
+                    تهران، خیابان ولیعصر، نرسیده به سه راه جمهوری، کوچه رجب بیگی
+                    تلفن دفتر: 91014919 021
+                  </address>
+                  <address class="address sari">
+                    مازندران، ساری، خیابان فرهنگ، خیابان حافظ، فروشگاه اینترنتی
+                    تجهیزات پزشکی می‌مد کدپستی: 4818819959 تلفن دفتر: 91014919
+                    011
+                  </address>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-sm-6 col-md-4">
+                  <div class="footer-links">
+                    <h5 class="links-title">دسترسی سریع</h5>
+                    <ul class="links-list">
+                      <li class="link-item">
+                        <a class="footer-link" href="">ورود و ثبت نام</a>
+                      </li>
+                      <li class="link-item">
+                        <a class="footer-link" href="">درباره ما</a>
+                      </li>
+                      <li class="link-item">
+                        <a class="footer-link" href="">قوانین و مقررات می‌مد</a>
+                      </li>
+                      <li class="link-item">
+                        <a class="footer-link" href="">گواهی‌های می‌مد</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="footer-links">
+                    <h5 class="links-title">خدمات مشتریان</h5>
+                    <ul class="links-list">
+                      <li class="link-item">
+                        <a class="footer-link" href="">ورود و ثبت نام</a>
+                      </li>
+                      <li class="link-item">
+                        <a class="footer-link" href="">دسترسی سریع</a>
+                      </li>
+                      <li class="link-item">
+                        <a class="footer-link" href="">درباره ما</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="footer-links">
+                    <h5 class="links-title">گواهی می مد</h5>
+                    <div class="licenses">
+                      <img
+                        class="license-logo"
+                        src="./assets/images/image/enamad-3-removebg-preview 1.svg"
+                        alt=""
+                      />
+                      <img
+                        class="license-logo"
+                        src="./assets/images/image/logo-saman2-removebg-preview 1.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row secondRow">
+            <div class="col-lg-6">
+              <div class="worktime-box">
+                <p class="worktime-text">
+                  ساعات کاری میمد شنبه تا چهارشنبه: 8 صبح تا 5 عصر پنجشنبه ها: 8
+                  صبح تا 12 ظهر لطفاً در غیر این ساعات فقط از طریق واتساپ
+                  (09129214207) پیام خود را به سایت میمد ارسال فرمایید تا
+                  همکاران فروش در اسرع وقت (اولین ساعات کاری) خدمت شما تماس حاصل
+                  نمایند.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="d-flex flex-column">
+                <p class="signupNewsShop-p">
+                  با عضویت در خبرنامه فروشگاه می‌مد از محصولات جدید و
+                  به‌روزرسانی‌ها با خبر شوید عضویت
+                </p>
+                <form class="d-flex formSignUpNews">
+                  <input
+                    dir="ltr"
+                    class="signupNewsShop-input"
+                    type="email"
+                    placeholder="لطفا ایمیل خود را وارد کنید"
+                  />
+                  <div class="signupNewsShop-btn">
+                    <button class="submit-btn" type="submit">عضویت</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <p class="role-p">
+          استفاده از مطالب فروشگاه اینترنتی می مد فقط برای مقاصد غیرتجاری و با
+          ذکر منبع بلامانع است. کلیه حقوق این سایت متعلق به شرکت لوازم پزشکی
+          میثم طبرستان (فروشگاه اینترنتی تجهیزات پزشکی و بیمارستانی می مد)
+          می‌باشد
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
+
+<!-- <li class="nav-item dropdown">
+      <a
+      class="nav-link dropdown-toggle"
+      href="#"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Dropdown
+    </a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li>
+        <a class="dropdown-item" href="#">Another action</a>
+      </li>
+      <li>
+        <hr class="dropdown-divider" />
+      </li>
+      <li>
+        <a class="dropdown-item" href="#"
+          >Something else here</a
+        >
+      </li>
+    </ul>
+  </li> -->
+<!-- https://www.figma.com/file/1mHbvPGFCmbQ9bzj50e0xP/Untitled?node-id=0%3A1&t=jUdM7nymAcjYWFM7-0 -->

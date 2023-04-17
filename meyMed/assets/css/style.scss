@@ -1,0 +1,28 @@
+// @font-face {
+//     font-family: ;
+//     src: url(../fonts/);
+// }
+@import "header";
+@import "main";
+@import "footer";
+
+body {
+  background-color: #f4faff;
+  background-image: url(../images/bg-img/Ellipse\ 5\ \(1\).png);
+  background-repeat: no-repeat;
+  background-position: center 300px;
+  .role-p {
+    color: #A2B8CA;
+    font-size: 0.75rem;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+}
+
+html {
+  @media (max-width: 440px) {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,94 @@
+.fourth-section {
+  .row {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .productTypes {
+      background-color: #c1e0ff;
+      padding: 2rem;
+      border-radius: 1.8rem;
+      @media (max-width: 380px) {
+        justify-content: center !important;
+      }
+      .d-flex {
+        @media (max-width: 380px) {
+          gap: 2rem;
+        }
+        .productsTypes-title {
+          font-size: clamp(1.7rem, 2vw, 1.9rem);
+          max-width: 14rem;
+          font-weight: 700;
+          @media (max-width: 380px) {
+            text-align: center;
+          }
+        }
+        .seeMore-link {
+          margin-top: 5rem;
+          text-decoration: none;
+          background-color: #4a95e3;
+          color: #ffffff;
+          padding: 1rem 1.5rem;
+          max-width: 10rem;
+          border-radius: 1rem;
+          font-weight: 600;
+          text-align: center;
+          @media (max-width: 380px) {
+            margin: 0 auto;
+          }
+        }
+      }
+      .jel-img {
+        max-width: 6rem;
+        @media (max-width: 440px) {
+          max-width: 4.5rem;
+        }
+        @media (max-width: 380px) {
+          display: none;
+        }
+      }
+    }
+    .n95Mask {
+      background-color: #f4de9d;
+      padding: 2rem;
+      border-radius: 1.8rem;
+      @media (max-width: 380px) {
+        justify-content: center !important;
+      }
+      .d-flex {
+        @media (max-width: 380px) {
+          gap: 2rem;
+        }
+        .maskTypes-title {
+          font-size: clamp(1.7rem, 2vw, 1.9rem);
+          max-width: 14rem;
+          font-weight: 700;
+          @media (max-width: 380px) {
+            text-align: center;
+          }
+        }
+        .seeMore-link {
+          margin-top: 5rem;
+          text-decoration: none;
+          background-color: #f7c737;
+          color: #000000;
+          padding: 1rem 1.5rem;
+          max-width: 10rem;
+          border-radius: 1rem;
+          font-weight: 600;
+          text-align: center;
+          @media (max-width: 380px) {
+            margin: 0 auto;
+          }
+        }
+      }
+      .mask-img {
+        max-width: 10rem;
+        @media (max-width: 440px) {
+          max-width: 8rem;
+        }
+        @media (max-width: 380px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

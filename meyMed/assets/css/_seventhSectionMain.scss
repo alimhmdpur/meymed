@@ -1,0 +1,79 @@
+.seventh-section {
+  .title-button-customers {
+    position: relative;
+    padding-bottom: 2.5rem;
+    .newCustomers-title {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .text-center {
+    //   margin-bottom: 2rem;
+      color: #88A6C5;
+      font-size: 0.85rem;
+line-height: 24px;
+      font-weight: 500;
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+    }
+    .btn-arrow {
+      transform: translate(-50%, -50%);
+      bottom: 0;
+      left: 50%;
+      .next-button {
+        width: 2.5rem;
+        height: 2.5rem;
+        aspect-ratio: 1/1;
+        border-radius: 37.5%;
+        border: none;
+        background-color: #ffffff;
+        margin-right: 0.5rem;
+        &::after {
+          content: none;
+        }
+      }
+      .prev-button {
+        width: 2.5rem;
+        height: 2.5rem;
+        aspect-ratio: 1/1;
+        border-radius: 37.5%;
+        border: none;
+        background-color: #ffffff;
+        margin-left: 0.5rem;
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+  .mySwiper6 {
+    margin: 2rem 0;
+    .swiper-wrapper {
+      .swiper-slide {
+        .customers {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 20px;
+            width: 181px;
+            height: 180px;
+            @media(max-width:440px) {
+              margin: 0 auto;
+              min-width: 80%;
+            }
+            .customers-img {
+                display: block;
+                margin:auto auto;
+                filter: grayscale(100%);
+                max-width: 8rem;
+                min-width: 8rem;
+                aspect-ratio: 1/1;
+                &:hover {
+                    filter: none;
+                }
+            }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.third-section {
+  .mySwiper4 {
+    background-color: #ffffff;
+    max-width: 70%;
+    margin: 5rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    // border-bottom: 14px solid #B4D9FF;
+    .swiper-wrapper {
+      .swiper-slide {
+        .isotope-menu {
+          text-align: center;
+          padding: 1rem;
+          color: #616161;
+          font-size: clamp(0.7rem, 0.8vw, 1rem);
+          font-weight: 500;
+          border-radius: 0.6rem;
+          @media (max-width: 680px) {
+            padding: 1rem 0.5rem;
+          }
+          @media (max-width: 520px) {
+            font-size: clamp(0.65rem, 0.7vw, 0.8rem);
+            padding: 1rem 0.25rem;
+          }
+        }
+      }
+    }
+  }
+  .grid {
+    .col-11 {
+      .products{
+        box-shadow: 5px 10px 30px -15px rgba(0, 0, 0, 0.11);
+      }
+    }
+  }
+}
+.liked {
+  display: none;
+}

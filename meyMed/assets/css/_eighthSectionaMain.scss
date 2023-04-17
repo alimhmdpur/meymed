@@ -1,0 +1,63 @@
+.eighth-section {
+  margin-bottom: 7rem;
+  .meymed-shop {
+    margin-top: 6rem;
+
+    .img-meymedShop {
+      img {
+        display: block;
+        max-width: 7rem;
+      }
+    }
+    .title-meymedShop {
+      font-size: clamp(1.2rem, 1.4vw, 1.6rem);
+      font-weight: 700;
+    }
+  }
+  .primary-box {
+      background-color: #73b1f2;
+      padding: 1rem 1rem;
+      border-radius: 15px;
+      @media (max-width: 767.98px) {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+      @media (max-width: 576.98px) {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+      @media (max-width: 440px) {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+      .row {
+      .col-sm-10 {
+          @media (min-width: 1200.98px) {
+            &:not(:last-child) {
+              border-left: 2px solid white;
+            }
+        }
+        @media (max-width: 1200px) {
+          &:not(:nth-child(2n)) {
+            border-left: 2px solid white;
+          }
+        }
+        @media (max-width: 768px) {
+          &:not(:nth-child(2n)) {
+            border-left: none !important;
+          }
+        }
+        .d-flex {
+          .shopIcons {
+          }
+          .shopTitle {
+            margin-right: 0.5rem;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
